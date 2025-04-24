@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>MAKE A ORDER</title>
+  </head>
+  <body>
+    <header>
+      <div class="interface">
+        <div class="logo">
+          <a href="base.html">
+            <img
+              src="steelforge.png"
+              width="65px"
+              height="65px"
+              alt="Minha logo"
+            />
+          </a>
+        </div>
+
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="pedido.html">MAKE A ORDER</a></li>
+          </ul>
+        </nav>
+
+        <div class="me-contate">
+          <a href="index.php">
+            <button>SPEAK WITH US</button>
+          </a>
+        </div>
+        <!--contateme-->
+      </div>
+      <!--interface-->
+    </header>
+    <main>
+      <section id="contato">
+        <div class="container">
+          <h2>Faça seu pedido</h2>
+          <form id="formContato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="pedido">Feedback</label>
+            <textarea id="pedido" name="pedido" rows="4" required placeholder="Descreva o que você precisa..."></textarea>
+      
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      document
+        .getElementById("formContato")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const nome = document.getElementById("nome").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const pedido = document.getElementById("pedido").value.trim();
+
+          if (!nome || !email || !pedido) {
+            alert("Por favor, preencha todos os campos.");
+            return;
+          }
+
+          if (!email.includes("@") || !email.includes(".")) {
+            alert("Por favor, insira um email válido.");
+            return;
+          }
+
+          alert("Formulário enviado com sucesso!");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>

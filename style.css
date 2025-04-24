@@ -1,0 +1,317 @@
+/* ESTILO GERAL */
+.noto-sans-middle {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("bgsite2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: #000000d4;
+}
+
+header {
+  background-color: #000000b3;
+  backdrop-filter: blur(10px);
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.me-contate button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #18ffeca0;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+h2.Titulo {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.Titulo span {
+  color: #18ffeca0;
+}
+
+/* CABEÇALHO */
+header {
+  padding: 22px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #717171;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+/* atenção aqui */
+header nav a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.me-contate button:hover {
+  box-shadow: 0px 0px 8px #18ffeca0;
+  transform: scale(1.07);
+}
+
+/* TOPO DO SITE */
+
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: #fff;
+  font-size: 45px;
+  line-height: 45px;
+}
+/* ANIMAÇÃO1 */
+.topo-do-site .txt-topo-site h1 span {
+  color: #18ffec;
+  font-size: 50px;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: #fff;
+  margin: 40px 0px;
+}
+
+.topo-do-site .txt-topo-site h1 span::before {
+  content: "";
+  /* animation: palavras 7s infinite; */
+  color: #18ffec;
+}
+
+.topo-do-site .txt-topo-site h3 {
+  color: #fff;
+  font-size: 42px;
+  text-align: center;
+  line-height: 40px;
+  padding-top: 40px;
+}
+.topo-do-site .txt-topo-site h3 span::before {
+  content: "";
+  /* animation: palavras2 7s infinite; */
+  color: #18ffec;
+}
+
+@keyframes palavras {
+  0%,
+  32% {
+    content: "Olá";
+  }
+  33%,
+  66% {
+    content: "Hello";
+  }
+  67%,
+  100% {
+    content: "Ciao";
+  }
+}
+
+@keyframes palavras2 {
+  0%,
+  32% {
+    content: "Desenvolvedor";
+  }
+  33%,
+  66% {
+    content: "Escritor";
+  }
+  67%,
+  100% {
+    content: "Artista";
+  }
+}
+/* ANIMAÇÃO1 */
+
+/* ANIMAÇÃO2 */
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* FIM DA ANIMAÇÃO2 */
+
+/* ESTILO PROJETOS */
+
+.Projetos h2 {
+  margin: 35px;
+}
+
+section.Projetos .flex {
+  gap: 60px;
+  justify-content: center;
+}
+
+.Projetos {
+  padding: 40px 4%;
+}
+
+.Projetos .projetos-box {
+  color: #fff;
+  padding: 50px;
+  margin-top: 30;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.Projetos .projetos-box:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px #18ffeca0;
+}
+
+.Projetos .flex .projetos-box.projetos-box a {
+  text-decoration: none;
+}
+
+.Projetos .flex .projetos-box.projetos-box i {
+  display: flex;
+}
+
+.Projetos .flex .projetos-box.projetos-box i {
+  font-size: 135px;
+  color: #18ffec;
+  justify-content: center;
+}
+
+.Projetos .projetos-box h3 {
+  font-size: 30px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.projetos-box img {
+  margin: auto;
+  margin-left: 50px;
+}
+
+.Projetos .projetos-box p {
+  text-align: center;
+}
+
+.Projetos .projetos-box h3.NL {
+  margin-top: 50px;
+}
+
+/* ESTILO SOBREMIM */
+
+section.sobremim {
+  padding: 40px 4%;
+}
+
+section.sobremim .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobremim .txt-sobre {
+  color: #fff;
+}
+
+.sobremim .txt-sobre span {
+  color: #18ffec;
+}
+
+.sobremim .txt-sobre h2 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobremim .txt-sobre h2 span {
+  color: #18ffec;
+  display: block;
+}
+
+.sobremim .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+  font-size: 19px;
+}
+
+.sobremim .txt-sobre .social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: #18ffec;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.sobremim .txt-sobre .social button:hover {
+  box-shadow: 0px 0px 8px #18ffeca0;
+  transform: scale(1.07);
+}
+
+.sobremim {
+  background-color: #000000b3;
+  backdrop-filter: blur(10px);
+}
+.txt-sobre h2 {
+  text-transform: uppercase;
+}
+/* ANIMAÇÃO TEXTO */
